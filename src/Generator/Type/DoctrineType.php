@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Type;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Type;
 
 class DoctrineType
 {

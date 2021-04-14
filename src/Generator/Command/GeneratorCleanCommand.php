@@ -1,11 +1,11 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Command;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Wandi\EasyAdminPlusBundle\Generator\Exception\EAException;
+use Akrzem\EasyAdminPlusBundle\Generator\Exception\EAException;
 
 class GeneratorCleanCommand extends ContainerAwareCommand
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Auth\Event;
+namespace Akrzem\EasyAdminPlusBundle\Auth\Event;
 
 final class EasyAdminPlusAuthEvents
 {

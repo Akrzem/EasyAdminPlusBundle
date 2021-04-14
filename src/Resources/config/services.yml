@@ -1,80 +1,80 @@
 services:
     wandi.easy_admin_plus.command.user.create:
-          class: Wandi\EasyAdminPlusBundle\Auth\Command\UserCreateCommand
+          class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserCreateCommand
           tags:
               -  { name: console.command, command: wandi:easy-admin-plus:user:create }
     wandi.easy_admin_plus.command.user.remove:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserRemoveCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserRemoveCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:remove }
     wandi.easy_admin_plus.command.user.change_password:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserChangePasswordCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserChangePasswordCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:change-password }
     wandi.easy_admin_plus.command.user.enable:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserEnableCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserEnableCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:enable }
     wandi.easy_admin_plus.command.user.disable:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserDisableCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserDisableCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:disable }
     wandi.easy_admin_plus.command.user.add_roles:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserAddRolesCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserAddRolesCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:add-roles }
     wandi.easy_admin_plus.command.user.remove_roles:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserRemoveRolesCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserRemoveRolesCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:remove-roles }
     wandi.easy_admin_plus.command.user.set_roles:
-        class: Wandi\EasyAdminPlusBundle\Auth\Command\UserSetRolesCommand
+        class: Akrzem\EasyAdminPlusBundle\Auth\Command\UserSetRolesCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:user:set-roles }
 
     wandi.easy_admin_plus.translator:
-        class: Wandi\EasyAdminPlusBundle\Translator\Translator
+        class: Akrzem\EasyAdminPlusBundle\Translator\Translator
         public: true
         arguments:
             - '%easy_admin_plus%'
             - '%kernel.cache_dir%'
 
     wandi.easy_admin_plus.acl.security.admin_authorization_checker:
-        class: Wandi\EasyAdminPlusBundle\Acl\Security\AdminAuthorizationChecker
+        class: Akrzem\EasyAdminPlusBundle\Acl\Security\AdminAuthorizationChecker
         public: true
         arguments:
             - '@security.authorization_checker'
     wandi.easy_admin_plus.acl.event_listener.easy_admin_subscriber:
-        class: Wandi\EasyAdminPlusBundle\Acl\EventListener\EasyAdminSubscriber
+        class: Akrzem\EasyAdminPlusBundle\Acl\EventListener\EasyAdminSubscriber
         arguments:
             - '@wandi.easy_admin_plus.acl.security.admin_authorization_checker'
         tags:
             - { name: kernel.event_subscriber }
     wandi.easy_admin_plus.acl.helper.menu_helper:
-        class: Wandi\EasyAdminPlusBundle\Acl\Helper\MenuHelper
+        class: Akrzem\EasyAdminPlusBundle\Acl\Helper\MenuHelper
         arguments:
             - '@wandi.easy_admin_plus.acl.security.admin_authorization_checker'
     wandi.easy_admin_plus.acl.twig.menu_extension:
-        class: Wandi\EasyAdminPlusBundle\Acl\Twig\MenuExtension
+        class: Akrzem\EasyAdminPlusBundle\Acl\Twig\MenuExtension
         arguments:
             - '@wandi.easy_admin_plus.acl.helper.menu_helper'
         tags:
             - { name: twig.extension }
     wandi.easy_admin_plus.acl.twig.admin_authorization_extension:
-        class: Wandi\EasyAdminPlusBundle\Acl\Twig\AdminAuthorizationExtension
+        class: Akrzem\EasyAdminPlusBundle\Acl\Twig\AdminAuthorizationExtension
         arguments:
             - '@wandi.easy_admin_plus.acl.security.admin_authorization_checker'
         tags:
             - { name: twig.extension }
 
     wandi.easy_admin_plus.exporter.configuration.normalizer_config_pass:
-        class: Wandi\EasyAdminPlusBundle\Exporter\Configuration\NormalizerConfigPass
+        class: Akrzem\EasyAdminPlusBundle\Exporter\Configuration\NormalizerConfigPass
         public: true
     wandi.easy_admin_plus.exporter.configuration.property_config_pass:
-        class: Wandi\EasyAdminPlusBundle\Exporter\Configuration\PropertyConfigPass
+        class: Akrzem\EasyAdminPlusBundle\Exporter\Configuration\PropertyConfigPass
         public: true
     wandi.easy_admin_plus.exporter.configuration.template_config_pass:
-        class: Wandi\EasyAdminPlusBundle\Exporter\Configuration\TemplateConfigPass
+        class: Akrzem\EasyAdminPlusBundle\Exporter\Configuration\TemplateConfigPass
         public: true
 
     wandi.easy_admin_plus.generator.base:
@@ -83,27 +83,27 @@ services:
         calls:
             - method: buildServiceConfig
     wandi.easy_admin_plus.generator.generate:
-        class: Wandi\EasyAdminPlusBundle\Generator\Service\GeneratorGenerate
+        class: Akrzem\EasyAdminPlusBundle\Generator\Service\GeneratorGenerate
         public: true
         parent: wandi.easy_admin_plus.generator.base
     wandi.easy_admin_plus.generator.clean:
-        class: Wandi\EasyAdminPlusBundle\Generator\Service\GeneratorClean
+        class: Akrzem\EasyAdminPlusBundle\Generator\Service\GeneratorClean
         public: true
         parent: wandi.easy_admin_plus.generator.base
     wandi.easy_admin_plus.generator.entity:
-        class: Wandi\EasyAdminPlusBundle\Generator\Service\GeneratorEntity
+        class: Akrzem\EasyAdminPlusBundle\Generator\Service\GeneratorEntity
         public: true
         parent: wandi.easy_admin_plus.generator.base
 
     wandi.easy_admin_plus.command.generator.generate:
-        class: Wandi\EasyAdminPlusBundle\Generator\Command\GeneratorGenerateCommand
+        class: Akrzem\EasyAdminPlusBundle\Generator\Command\GeneratorGenerateCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:generator:generate }
     wandi.easy_admin_plus.command.generator.clean:
-        class: Wandi\EasyAdminPlusBundle\Generator\Command\GeneratorCleanCommand
+        class: Akrzem\EasyAdminPlusBundle\Generator\Command\GeneratorCleanCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:generator:cleanup }
     wandi.easy_admin_plus.command.generator.entity:
-        class: Wandi\EasyAdminPlusBundle\Generator\Command\GeneratorEntityCommand
+        class: Akrzem\EasyAdminPlusBundle\Generator\Command\GeneratorEntityCommand
         tags:
             -  { name: console.command, command: wandi:easy-admin-plus:generator:entity }

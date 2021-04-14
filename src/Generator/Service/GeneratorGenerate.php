@@ -1,11 +1,11 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Service;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Service;
 
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
 use Symfony\Component\Console\Output\ConsoleOutput;
-use Wandi\EasyAdminPlusBundle\Generator\Model\Entity;
-use Wandi\EasyAdminPlusBundle\Generator\GeneratorTool;
+use Akrzem\EasyAdminPlusBundle\Generator\Model\Entity;
+use Akrzem\EasyAdminPlusBundle\Generator\GeneratorTool;
 
 class GeneratorGenerate extends GeneratorBase implements GeneratorConfigInterface
 {
@@ -25,7 +25,7 @@ class GeneratorGenerate extends GeneratorBase implements GeneratorConfigInterfac
     /**
      * Generates entity files, the menu file, and the base file.
      *
-     * @throws \Wandi\EasyAdminPlusBundle\Generator\Exception\EAException
+     * @throws \Akrzem\EasyAdminPlusBundle\Generator\Exception\EAException
      */
     public function run(): void
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Exception;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Exception;
 
 class EAException extends \Exception
 {

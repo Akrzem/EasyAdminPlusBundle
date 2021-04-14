@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Exporter\Configuration;
+namespace Akrzem\EasyAdminPlusBundle\Exporter\Configuration;
 
 use EasyCorp\Bundle\EasyAdminBundle\Configuration\ConfigPassInterface;
 
@@ -55,11 +55,11 @@ class TemplateConfigPass implements ConfigPassInterface
                         $template = $entityConfig['templates']['field_id'];
                     // easyadminplus overrides
                     } elseif (file_exists('../vendor/wandi/easyadmin-plus-bundle/src/Resources/views/templates/field_' . $fieldMetadata['dataType'] . '.html.twig')) {
-                        $template = '@WandiEasyAdminPlus/templates/field_' . $fieldMetadata['dataType'] . '.html.twig';
+                        $template = '@AkrzemEasyAdminPlus/templates/field_' . $fieldMetadata['dataType'] . '.html.twig';
                     } elseif (array_key_exists($fieldTemplateName, $entityConfig['templates'])) {
                         $template = $entityConfig['templates'][$fieldTemplateName];
                     } else {
-                        $template = '@WandiEasyAdminPlus/templates/label_null.html.twig';
+                        $template = '@AkrzemEasyAdminPlus/templates/label_null.html.twig';
                     }
 
                     $entityConfig[$view]['fields'][$fieldName]['template'] = $template;

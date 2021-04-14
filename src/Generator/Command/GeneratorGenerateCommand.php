@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Command;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -9,7 +9,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
-use Wandi\EasyAdminPlusBundle\Generator\Exception\EAException;
+use Akrzem\EasyAdminPlusBundle\Generator\Exception\EAException;
 
 class GeneratorGenerateCommand extends ContainerAwareCommand
 {

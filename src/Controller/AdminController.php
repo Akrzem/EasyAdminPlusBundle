@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Controller;
+namespace Akrzem\EasyAdminPlusBundle\Controller;
 
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AdminController as BaseAdminController;
 use EasyCorp\Bundle\EasyAdminBundle\Event\EasyAdminEvents;
@@ -10,8 +10,8 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\PropertyAccess\PropertyAccess;
-use Wandi\EasyAdminPlusBundle\Exporter\Event\EasyAdminPlusExporterEvents;
-use Wandi\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
+use Akrzem\EasyAdminPlusBundle\Exporter\Event\EasyAdminPlusExporterEvents;
+use Akrzem\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
 
 class AdminController extends BaseAdminController
 {
@@ -211,7 +211,7 @@ class AdminController extends BaseAdminController
         $lastUsername = $authenticationUtils->getLastUsername();
 
         return $this->render(
-            '@WandiEasyAdminPlus/Admin/login.html.twig',
+            '@AkrzemEasyAdminPlus/Admin/login.html.twig',
             [
                 'error' => $error,
                 'lastUsername' => $lastUsername,
@@ -313,7 +313,7 @@ class AdminController extends BaseAdminController
             ])
         );
 
-        return $this->render('@WandiEasyAdminPlus/Admin/translations.html.twig', [
+        return $this->render('@AkrzemEasyAdminPlus/Admin/translations.html.twig', [
                 'domains' => $domains,
                 'domain' => $domain,
                 'dictionaries' => $dictionaries,

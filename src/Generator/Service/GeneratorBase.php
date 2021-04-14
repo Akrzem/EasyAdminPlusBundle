@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Service;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Service;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

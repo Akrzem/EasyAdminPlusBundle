@@ -1,11 +1,11 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Property;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Property;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\Mapping\Id;
-use Wandi\EasyAdminPlusBundle\Generator\Helper\PropertyHelper;
-use Wandi\EasyAdminPlusBundle\Generator\Type\TypeGuesser;
+use Akrzem\EasyAdminPlusBundle\Generator\Helper\PropertyHelper;
+use Akrzem\EasyAdminPlusBundle\Generator\Type\TypeGuesser;
 
 class PropertyConfig
 {

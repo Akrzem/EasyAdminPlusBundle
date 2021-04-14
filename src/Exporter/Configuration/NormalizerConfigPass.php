@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Exporter\Configuration;
+namespace Akrzem\EasyAdminPlusBundle\Exporter\Configuration;
 
 use EasyCorp\Bundle\EasyAdminBundle\Configuration\ConfigPassInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
