@@ -183,7 +183,7 @@ class AdminController extends BaseAdminController
             $row = [];
             foreach ($fields as $field) {
                 $value = $ea_twig->renderEntityField($twig, 'list', $this->entity['name'], $entity, $field);
-                $row[] = trim($value);
+                $row[] = strip_tags(trim($value));
             }
             fputcsv($handle, $row, ';', '"');
         }
