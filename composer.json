@@ -42,7 +42,7 @@
     },
     "autoload": {
         "psr-4": {
-            "akrzem\\EasyAdminPlusBundle\\": "src/"
+            "Akrzem\\EasyAdminPlusBundle\\": "src/"
         }
     }
 }
