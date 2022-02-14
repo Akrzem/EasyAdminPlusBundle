@@ -109,7 +109,7 @@ class AdminController extends BaseAdminController
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function exportAction()
+    protected function exportAction()
     {
         $entityName = $this->entity['name'];
         $user = $this->getUser();
@@ -165,7 +165,7 @@ class AdminController extends BaseAdminController
      * @param array $fields fields to display
      * @return Response
      */
-    public function getExportFile($paginator, $fields)
+    protected function getExportFile($paginator, $fields)
     {
         $handle = fopen('php://memory', 'r+');
 
