@@ -1,8 +1,8 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Command;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Command;
 
-use Wandi\EasyAdminPlusBundle\Generator\Exception\EAException;
+use Akrzem\EasyAdminPlusBundle\Generator\Exception\EAException;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

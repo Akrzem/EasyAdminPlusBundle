@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Entity;
+namespace Akrzem\EasyAdminPlusBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
@@ -10,7 +10,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * Admin.
  *
  * @ORM\Table(name="wandi_easy_admin_plus_user")
- * @ORM\Entity(repositoryClass="Wandi\EasyAdminPlusBundle\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="Akrzem\EasyAdminPlusBundle\Repository\UserRepository")
  * @UniqueEntity(fields={"username"})
  */
 class User implements UserInterface

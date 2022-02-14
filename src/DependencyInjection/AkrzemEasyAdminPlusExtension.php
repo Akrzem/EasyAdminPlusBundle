@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\DependencyInjection;
+namespace Akrzem\EasyAdminPlusBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @see http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class WandiEasyAdminPlusExtension extends Extension
+class AkrzemEasyAdminPlusExtension extends Extension
 {
     /**
      * {@inheritdoc}

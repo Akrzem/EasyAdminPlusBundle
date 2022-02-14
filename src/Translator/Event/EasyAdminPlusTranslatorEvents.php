@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Translator\Event;
+namespace Akrzem\EasyAdminPlusBundle\Translator\Event;
 
 final class EasyAdminPlusTranslatorEvents
 {

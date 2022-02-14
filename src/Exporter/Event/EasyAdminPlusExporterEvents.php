@@ -1,6 +1,6 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Exporter\Event;
+namespace Akrzem\EasyAdminPlusBundle\Exporter\Event;
 
 final class EasyAdminPlusExporterEvents
 {

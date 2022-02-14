@@ -1,14 +1,14 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Auth\Command;
+namespace Akrzem\EasyAdminPlusBundle\Auth\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
-use Wandi\EasyAdminPlusBundle\Entity\User;
-use Wandi\EasyAdminPlusBundle\Auth\Event\EasyAdminPlusAuthEvents;
+use Akrzem\EasyAdminPlusBundle\Entity\User;
+use Akrzem\EasyAdminPlusBundle\Auth\Event\EasyAdminPlusAuthEvents;
 
 class UserRemoveRolesCommand extends ContainerAwareCommand
 {

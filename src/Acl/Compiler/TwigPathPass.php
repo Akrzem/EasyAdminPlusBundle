@@ -1,8 +1,8 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Acl\Compiler;
+namespace Akrzem\EasyAdminPlusBundle\Acl\Compiler;
 
-use Wandi\EasyAdminPlusBundle\WandiEasyAdminPlusBundle;
+use Akrzem\EasyAdminPlusBundle\AkrzemEasyAdminPlusBundle;
 use EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -15,7 +15,7 @@ class TwigPathPass implements CompilerPassInterface
         $twigLoaderFilesystemDefinition = $container->getDefinition($twigLoaderFilesystemId);
 
         // Replaces native EasyAdmin templates
-        $easyAdminExtensionBundleRefl = new \ReflectionClass(WandiEasyAdminPlusBundle::class);
+        $easyAdminExtensionBundleRefl = new \ReflectionClass(AkrzemEasyAdminPlusBundle::class);
         $easyAdminExtensionBundlePath = dirname($easyAdminExtensionBundleRefl->getFilename());
         $easyAdminExtensionTwigPath = $easyAdminExtensionBundlePath.'/Resources/views';
         $twigLoaderFilesystemDefinition->addMethodCall('prependPath', array($easyAdminExtensionTwigPath, 'EasyAdmin'));

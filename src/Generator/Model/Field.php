@@ -1,9 +1,9 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Model;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Model;
 
-use Wandi\EasyAdminPlusBundle\Generator\Helper\PropertyClassHelper;
-use Wandi\EasyAdminPlusBundle\Generator\Helper\PropertyTypeHelper;
+use Akrzem\EasyAdminPlusBundle\Generator\Helper\PropertyClassHelper;
+use Akrzem\EasyAdminPlusBundle\Generator\Helper\PropertyTypeHelper;
 
 class Field
 {

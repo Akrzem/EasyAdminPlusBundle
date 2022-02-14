@@ -30,12 +30,12 @@ $ composer require wandi/easyadmin-plus-bundle
 
 ### Replace EasyAdmin controller
 
-Load routes from our `AdminController` or yours but make sure it extends `WandiEasyAdminPlusBundle` Controller
+Load routes from our `AdminController` or yours but make sure it extends `AkrzemEasyAdminPlusBundle` Controller
 
 ```yaml
 # config/routes/easy_admin.yaml
 easy_admin_bundle:
-    resource: '@WandiEasyAdminPlusBundle/Controller/AdminController.php'
+    resource: '@AkrzemEasyAdminPlusBundle/Controller/AdminController.php'
     prefix: /admin
     type: annotation
 ```

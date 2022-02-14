@@ -1,7 +1,7 @@
 wandi_easy_admin_plus_login:
     path: /login
     defaults:
-        _controller: WandiEasyAdminPlusBundle:Admin:login
+        _controller: AkrzemEasyAdminPlusBundle:Admin:login
 
 wandi_easy_admin_plus_logout:
     path: /logout
@@ -9,4 +9,4 @@ wandi_easy_admin_plus_logout:
 wandi_easy_admin_plus_translations:
     path: /translations
     defaults:
-        _controller: WandiEasyAdminPlusBundle:Admin:translations
+        _controller: AkrzemEasyAdminPlusBundle:Admin:translations

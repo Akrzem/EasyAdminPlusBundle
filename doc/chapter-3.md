@@ -142,7 +142,7 @@ The event is dispatched when an admin accesses the form on a specific domain.
 
 ```php
 use Symfony\Component\EventDispatcher\GenericEvent;
-use Wandi\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
+use Akrzem\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
 
 $this->get('event_dispatcher')->dispatch(EasyAdminPlusTranslatorEvents::PRE_TRANSLATE,
     new GenericEvent($domain, [
@@ -161,7 +161,7 @@ The event is dispatched when an admin submits the form on a specific domain.
 
 ```php
 use Symfony\Component\EventDispatcher\GenericEvent;
-use Wandi\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
+use Akrzem\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
 
 $this->get('event_dispatcher')->dispatch(EasyAdminPlusTranslatorEvents::POST_TRANSLATE,
     new GenericEvent($domain, [
@@ -178,7 +178,7 @@ $this->get('event_dispatcher')->dispatch(EasyAdminPlusTranslatorEvents::POST_TRA
 ##### Subscribe events
 
 ```php
-use Wandi\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
+use Akrzem\EasyAdminPlusBundle\Translator\Event\EasyAdminPlusTranslatorEvents;
 
 class EasyAdminPlusSubscriber implements EventSubscriberInterface
 {

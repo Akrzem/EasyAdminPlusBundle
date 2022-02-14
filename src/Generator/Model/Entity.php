@@ -1,12 +1,12 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator\Model;
+namespace Akrzem\EasyAdminPlusBundle\Generator\Model;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
-use Wandi\EasyAdminPlusBundle\Generator\Exception\EAException;
-use Wandi\EasyAdminPlusBundle\Generator\Helper\PropertyTypeHelper;
-use Wandi\EasyAdminPlusBundle\Generator\Property\PropertyConfig;
+use Akrzem\EasyAdminPlusBundle\Generator\Exception\EAException;
+use Akrzem\EasyAdminPlusBundle\Generator\Helper\PropertyTypeHelper;
+use Akrzem\EasyAdminPlusBundle\Generator\Property\PropertyConfig;
 
 class Entity
 {

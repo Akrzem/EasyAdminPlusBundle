@@ -5,10 +5,11 @@
     "keywords": [
         "Symfony",
         "Bundle",
-        "Wandi",
+        "Akrzem",
         "EasyAdminPlusBundle",
         "EasyAdminBundle",
-        "Admin"
+        "Admin",
+        "Akrzem"
     ],
     "homepage": "https://github.com/Akrzem/EasyAdminPlusBundle",
     "license": "MIT",

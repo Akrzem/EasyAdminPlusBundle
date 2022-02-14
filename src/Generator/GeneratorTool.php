@@ -1,17 +1,17 @@
 <?php
 
-namespace Wandi\EasyAdminPlusBundle\Generator;
+namespace Akrzem\EasyAdminPlusBundle\Generator;
 
-use Wandi\EasyAdminPlusBundle\Generator\Exception\EAException;
+use Akrzem\EasyAdminPlusBundle\Generator\Exception\EAException;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Yaml\Dumper;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Translation\Translator;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
-use Wandi\EasyAdminPlusBundle\Generator\Helper\PropertyClassHelper;
-use Wandi\EasyAdminPlusBundle\Generator\Helper\PropertyTypeHelper;
-use Wandi\EasyAdminPlusBundle\Generator\Model\Entity;
+use Akrzem\EasyAdminPlusBundle\Generator\Helper\PropertyClassHelper;
+use Akrzem\EasyAdminPlusBundle\Generator\Helper\PropertyTypeHelper;
+use Akrzem\EasyAdminPlusBundle\Generator\Model\Entity;
 
 class GeneratorTool
 {

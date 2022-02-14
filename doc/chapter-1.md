@@ -10,12 +10,12 @@ Update your `security` settings:
 security:
     encoders:
         # ...
-        Wandi\EasyAdminPlusBundle\Entity\User: bcrypt
+        Akrzem\EasyAdminPlusBundle\Entity\User: bcrypt
     
     providers:
         # ...    
         wandi_easy_admin_plus:
-            entity: { class: 'Wandi\EasyAdminPlusBundle\Entity\User' }
+            entity: { class: 'Akrzem\EasyAdminPlusBundle\Entity\User' }
             
     firewalls:
         wandi_easy_admin_plus:
